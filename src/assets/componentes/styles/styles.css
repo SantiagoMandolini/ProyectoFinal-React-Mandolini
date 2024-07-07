@@ -1,0 +1,223 @@
+@import '~bootstrap/scss/bootstrap';
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+  }
+  
+  .thumbnail {
+    width: 300px;
+    height: 300px;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: normal;
+    background-color: #111111;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .descripcion-producto {
+    padding: 10px;
+    background-color: #222222;
+    color: #ffffff;
+  }
+  
+  .price {
+    padding: 10px;
+    background-color: #222222;
+    color: #ffffff;
+  }
+  
+  .price,
+  .content {
+    display: inline-block;
+    vertical-align: left;
+  }
+  
+  .price button {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+    letter-spacing: normal;
+    color: #000000;
+    background-color: #44d62c;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  header nav.navbar {
+    background-color: #000;
+    border-bottom: 3px solid #44d62c;
+  }
+  
+  header nav.navbar .navbar-brand,
+  header nav.navbar .navbar-nav .nav-link {
+    color: #000000;
+  }
+  
+  header nav.navbar .navbar-brand.active,
+  header nav.navbar .navbar-nav .nav-link.active {
+    font-weight: bold;
+  }
+  
+  .btn-green {
+    background-color: #44d62c;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 0px;
+  }
+  
+  .btn-green:last-child {
+    margin-right: 20px;
+  }
+  
+  header nav.navbar .btn-green {
+    background-color: #44d62c;
+    color: #000;
+  }
+  
+  .btn-green:hover {
+    background-color: #3cbf24;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  footer {
+    color: #000000;
+    text-align: right;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    position: fixed;
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .footer-content .footer-image {
+    width: 50px;
+    height: auto;
+    display: inline;
+  }
+  
+  .logos {
+    overflow: hidden;
+    padding: 5px 0;
+    background: rgba(59, 58, 58, 0.9843137255);
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .logos h2 {
+    overflow: hidden;
+    padding: 5px 0;
+    white-space: nowrap;
+    position: relative;
+    text-align: left;
+    color: #ffffff;
+    border: 5px solid #44d62c;
+  }
+  
+  .logos .logos-marcas,
+  .logos .logos-marcas-segundo {
+    display: inline-block;
+    animation: slide 20s infinite linear;
+  }
+  
+  .logos .logos-marcas img,
+  .logos .logos-marcas-segundo img {
+    height: 50px;
+    margin: 0 40px;
+  }
+  
+  #carouselWithControls {
+    width: 100%;
+    max-width: 1680px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  #carouselWithControls img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+  }
+  
+  .producto {
+    overflow: hidden;
+    background-color: #222;
+  }
+  
+  .producto img {
+    width: 100%;
+    height: 75px;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .producto img:hover {
+    transform: scale(1.2);
+  }
+  
+  .card-body h3 {
+    color: #ffffff;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #carouselWithControls {
+      height: 200px;
+    }
+    #carouselWithControls img {
+      height: auto;
+      max-width: 100%;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      font-size: 2rem;
+      width: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .carousel-control-prev {
+      left: 0;
+    }
+    .carousel-control-next {
+      right: 0;
+    }
+  }
+  
+  .product-badge {
+    background: #19f505;
+    color: #000;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: 1.6875rem;
+    line-height: 1.6875rem;
+    max-width: 12.5rem;
+    min-width: 5.25rem;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    z-index: 3;
+  }
+  
